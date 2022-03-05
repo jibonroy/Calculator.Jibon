@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Calclator made by Jibon Krishna Roy -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculetor</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="calculetorbox">
+        <div class="head">
+            <p class="p1"><u>f-999MS</u> <i>CASIO</i></p>
+        </div>
+        <input type="text" class="display" id="display-box" placeholder="0" disabled>
+        <hr>
+        <br>
+        <input type="button" value="AC" class="acbtn" onclick="document.getElementById('display-box').value =''">
+        <input type="button" value="(" class="btn" onclick="document.getElementById('display-box').value +='('">
+        <input type="button" value=")" class="btn" onclick="document.getElementById('display-box').value +=')'">
+        <input type="button" value="/" class="btn" onclick="document.getElementById('display-box').value +='/'">
+        <br>
+        <input type="button" value="7" class="btn" onclick="document.getElementById('display-box').value +='7'">
+        <input type="button" value="8" class="btn" onclick="document.getElementById('display-box').value +='8'">
+        <input type="button" value="9" class="btn" onclick="document.getElementById('display-box').value +='9'">
+        <input type="button" value="X" class="btn" onclick="document.getElementById('display-box').value +='*'">
+        <br>
+        <input type="button" value="4" class="btn" onclick="document.getElementById('display-box').value +='4'">
+        <input type="button" value="5" class="btn" onclick="document.getElementById('display-box').value +='5'">
+        <input type="button" value="6" class="btn" onclick="document.getElementById('display-box').value +='6'">
+        <input type="button" value="+" class="btn" onclick="document.getElementById('display-box').value +='+'">
+        <br>
+        <input type="button" value="1" class="btn" onclick="document.getElementById('display-box').value +='1'">
+        <input type="button" value="2" class="btn" onclick="document.getElementById('display-box').value +='2'">
+        <input type="button" value="3" class="btn" onclick="document.getElementById('display-box').value +='3'">
+        <input type="button" value="-" class="btn" onclick="document.getElementById('display-box').value +='-'">
+        <br>
+        <input type="button" value="0" class="btn" onclick="document.getElementById('display-box').value +='0'">
+        <input type="button" value="00" class="btn" onclick="document.getElementById('display-box').value +='00'">
+        <input type="button" value="." class="btn" onclick="document.getElementById('display-box').value +='.'">
+        <input type="button" value="=" class="btn" onclick="Calculate()">
+        <script>
+            function Calculate() {
+                var p = document.getElementById("display-box").value;
+                var q = eval(p);
+                document.getElementById("display-box").value = q;
+            }
+        </script>
+
+    </div>
+
+</body>
+
+</html>
